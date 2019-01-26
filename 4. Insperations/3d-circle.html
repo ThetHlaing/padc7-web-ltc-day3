@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://tympanus.net/Tutorials/3DShadingWithBoxShadows/ -->
+<html lang="en" class="js csstransforms3d gr__tympanus_net" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>3D Shading with Box-Shadows</title>
+		<meta name="description" content="A shading effect for 3D transformed elements">
+		<meta name="keywords" content="css3, transforms, shadow, shading, 3d, box shadow">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="https://tympanus.net/Tutorials/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./3D Shading with Box-Shadows_files/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./3D Shading with Box-Shadows_files/demo.css">
+		<link rel="stylesheet" type="text/css" href="./3D Shading with Box-Shadows_files/component.css">
+		<script type="text/javascript" async="" src="./3D Shading with Box-Shadows_files/ga.js"></script><script src="./3D Shading with Box-Shadows_files/modernizr.custom.js"></script>
+		<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	<link rel="stylesheet" type="text/css" href="./3D Shading with Box-Shadows_files/demoadpacks.css"><script id="_carbonads_projs" type="text/javascript" src="./3D Shading with Box-Shadows_files/CKYIK53I.json"></script></head>
+	<body data-gr-c-s-loaded="true">
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/MultiLevelPushMenu/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16316"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header>
+				<h1>3D Shading with Box-Shadows <span>A shading effect for 3D transformed elements</span></h1>  
+			</header>
+			<div class="wrapper">
+				<ul class="stage clearfix">
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>It's a Wonderful Life</h1>
+									<span class="year">1946</span>
+									<span class="rating">PG</span>
+									<span class="duration">130 minutes</span>
+								</header>
+								<p>
+									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Vengeance Valley</h1>
+									<span class="year">1951</span>
+									<span class="rating">NR</span>
+									<span class="duration">83 minutes</span>
+								</header>
+								<p>
+									A cattle baron takes in an orphaned boy and raises him, causing his own son to resent the boy. As they get older the resentment festers into hatred, and eventually the real son frames his stepbrother for fathering an illegitimate child that is actually his, seeing it as an opportunity to get his half-brother out of the way so he can have his father's empire all to himself.
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>The Gold Rush</h1>
+									<span class="year">1925</span>
+									<span class="rating">NR</span>
+									<span class="duration">95 minutes</span>
+								</header>
+								<p>
+									The Tramp travels to the Yukon to take part in the Klondike Gold Rush. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
+								</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div><!-- /wrapper -->
+		</div><!-- /container -->
+		<!-- For the demo ad only -->   
+<script src="./3D Shading with Box-Shadows_files/demoad.js"></script><div id="cdawrap" style="display: none;"><span id="cda-remove" class="cda-remove" data-content="Continue to demo" aria-label="Close ad"></span><script type="text/javascript" async="" id="_carbonads_js" src="./3D Shading with Box-Shadows_files/carbon.js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QWFTBD523MCY7LYKQMCEADVKQWCKSDTZ3JCWBDEK7JCWBD62JKC6BIV53WCYYDEK3EHJNCLSIZ?segment=placement:codrops;" class="carbon-img" target="_blank" rel="noopener"><img src="./3D Shading with Box-Shadows_files/1546451370-digitalocean-260x200-light_1_.png" alt="" border="0" height="100" width="130" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QWFTBD523MCY7LYKQMCEADVKQWCKSDTZ3JCWBDEK7JCWBD62JKC6BIV53WCYYDEK3EHJNCLSIZ?segment=placement:codrops;" class="carbon-text" target="_blank" rel="noopener">Do more with Droplets, the scalable compute platform.</a></span><a href="http://carbonads.net/?utm_source=codrops&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener">ads via Carbon</a><img src="./3D Shading with Box-Shadows_files/B21757417.230484297" border="0" height="1" width="1" style="display: none;"></span></div></div>
+	
+</body></html>

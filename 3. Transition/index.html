@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>example 1 - Css Selectors</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.circle {
+			width: 100px;
+			height: 100px;
+			margin: 10px auto;
+			border-radius: 100px;
+		}
+
+		.green-ball {
+			background-color: green;			
+		}
+
+		.green-ball:hover {
+			
+		}
+
+		.four-color {
+			border-top: 9px solid blue;
+			border-right: 9px solid #fe5b5b;
+			border-bottom: 9px solid green;
+			border-left: 9px solid #c32b2b;			
+		}
+
+		.four-color:hover{
+			
+		}
+
+		.move-around {
+			background-color: rgb(113, 93, 204);			
+		}
+
+		.move-around:hover {
+			
+		}
+		
+	</style>	
+</head>
+
+<body>
+	<!-- Change the shape to square on hover-->
+	<!-- Change the background color on hover-->
+	<div class="circle green-ball"></div>
+
+	<!-- Make it rotate on hover-->
+	<div class="circle four-color"></div>
+
+	<!-- drop the ball to the bottom of the page on hover-->
+	<div class="circle move-around"></div>
+</body>
+
+</html>
