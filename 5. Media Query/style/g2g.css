@@ -37,3 +37,46 @@
     grid-column: col2-start;
     grid-row: row2-start;
 }
+
+@media screen and (max-width:820px) and (min-width:500px){
+    .wrapper {
+        grid-template-columns: [col1-start] 35% [col2-start] 35% [col3-start] 20% [col3-end];      
+    }
+    
+}
+
+@media screen and (max-width:499px){
+    .wrapper {
+        grid-template-columns: [col1-start] 45% [col2-start] 45% [col2-end];     
+        grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end] ;
+    }
+
+    .a {
+        grid-column: col1-start / col2-end;
+        grid-row: row1-start;
+    }
+    
+    .b {    
+        grid-column: col1-start / col2-end;
+        grid-row: row3-start / row3-end;
+    }
+    
+    .c {
+        grid-column: col1-start;
+        grid-row: row2-start;
+    }
+    
+    .d {
+        grid-column: col2-start;
+        grid-row: row2-start;
+    }
+    
+    
+}
+
+
+@media print{
+    .a{
+        display: none;
+    }
+}

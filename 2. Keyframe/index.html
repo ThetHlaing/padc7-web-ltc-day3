@@ -28,6 +28,15 @@
 			border-left: 9px solid #c32b2b;	
 		}
 
+		.four-color:hover{
+			animation-name: MyRotate;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
 		.move-around {
 			background-color: rgb(113, 93, 204);
 			transition: transform .5s ease-in-out 0s;
@@ -37,6 +46,15 @@
 			animation-delay: 0s;
 			animation-iteration-count: 10;
 			animation-direction: alternate;
+		}
+
+		@keyframes MyRotate{
+			0%{
+				tranform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(360deg);
+			}
 		}
 
 		@keyframes change-to-square {

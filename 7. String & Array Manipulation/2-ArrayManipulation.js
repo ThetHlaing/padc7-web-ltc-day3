@@ -10,6 +10,8 @@
       // Get the value of the last item and increase one
       // Remove the last item of the array
       // Add in the newly increased number into array
+      const lastItem = array.pop();
+      array.push(lastItem + 1);
       return array;
     };
 
